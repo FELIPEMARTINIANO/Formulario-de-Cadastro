@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        
+        body{
+            background-color: black;
+        }
+
+         h1{
+           color: rgb(144, 226, 232);
+           font-family: sans-serif;
+         }
+
+        
+        .row{
+           margin:5px; 
+        }
+
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        
+        fieldset{
+            margin: 25px ;
+            border-radius: 10px;
+            border-color: rgb(99, 211, 196);
+            color: rgb(132, 230, 223);
+        }
+
+        input{
+            border-color: rgb(235, 244, 146);
+            background-color: rgb(169, 241, 238);
+        }
+
+        button{
+            margin:25px;
+            margin-top:0px;
+            background-color: rgb(19, 71, 69);
+            color:rgb(147, 239, 221);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome:</label><input type="text"/>
+            <label style="margin-left: 92px;">E-mail:</label><input type="email"/>
+        </div>
+        <div class="row">
+            <label>Profissão:</label>
+            <select name="role"  style="background-color: rgb(186, 251, 238);">
+                <option value="">Selecione o cargo</option>
+                <option value="Engenheiro de Dados">Engenheiro de Dados</option>
+                <option value="Cientista de dados">Cientista de dados</option>
+                <option value="Programador Backend">Programador Backend</option>
+                <option value="Desenvolvedor mobile">Desenvolvedor mobile</option>
+                <option value="Engenheiro de software">Engenheiro de software</option>
+                <option value="Programador web">Programador web</option>
+                <option value="Desenvolvedor de Jogos">Desenvolvedor de Jogos</option>
+                <option value="Analista de Segurança Cibernética">Analista de Segurança Cibernética</option>
+                <option value="Especialista em SEO">Especialista em SEO</option>
+                <option value="Especialista em Inteligência Artificial">Especialista em Inteligência Artificial</option>
+                <option value="Especialista em Redes Sociais">Especialista em Redes Sociais</option>
+                <option value="Especialista em Chatbots">Especialista em Chatbots</option>
+                <option value="Especialista em Experiência do Usuário">Especialista em Experiência do Usuário</option>
+                <option value="Especialista em Redes Sociais">Especialista em Redes Sociais</option>
+                <option value="Especialista em Marketing de Conteúdo">Especialista em Marketing de Conteúdo</option>
+                
+            </select>
+            <label>Empresa:</label><input type="text"/>
+    </fieldset>
+
+    </div>
+    <fieldset>
+        <legend>Endereço</legend>
+        <div class="row">
+            <label>Endereço:</label><input type="text"/>
+            <label>Número:</label><input type="number" min="0"  style="width: 50px"/>
+        </div>
+        <div class="row">
+            <label>Bairro:</label><input type="text">
+        </div>
+        <div class="row">
+            <label>Cidade/UF:</label><input type="text">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Informações de Contato</legend>
+
+        <div class="row">
+            <label>Celular:</label><input type="number">
+            <label>Whatsapp:</label><input type="number">
+        </div>
+     
+        <div class="row">
+            <label>Linkedin:</label><input type="text">
+            <label>Github:</label><input type="text">
+        </div>
+    </fieldset>
+    <div>
+        <button type="reset">Limpar</button><br>
+        <button type="submit">Enviar formulário</button>
+    </div>
+
+</form>
+
+
+
+    
+</body>
+</html>
